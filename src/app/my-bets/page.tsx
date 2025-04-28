@@ -88,7 +88,7 @@ export default function MyBetsPage() {
         <div className="flex flex-col items-center justify-center space-y-8">
           <h1 className="text-3xl font-bold">My Bets</h1>
           <p className="text-muted-foreground max-w-2xl text-center">
-            View all the prediction markets you've participated in.
+            View all the prediction markets you&apos;ve participated in.
           </p>
 
           <div className="w-full max-w-4xl">
@@ -105,7 +105,7 @@ export default function MyBetsPage() {
                 ) : activeMarkets.length > 0 ? (
                   activeMarkets.map((market) => <EventCard key={market.id} market={market} />)
                 ) : (
-                  <p className="text-center text-muted-foreground py-8">You haven't bet on any active markets yet.</p>
+                  <p className="text-center text-muted-foreground py-8">You haven&apos;t bet on any active markets yet.</p>
                 )}
               </TabsContent>
 
@@ -116,7 +116,7 @@ export default function MyBetsPage() {
                   pendingMarkets.map((market) => <EventCard key={market.id} market={market} />)
                 ) : (
                   <p className="text-center text-muted-foreground py-8">
-                    You don't have any bets in markets pending resolution.
+                    You don&apos;t have any bets in markets pending resolution.
                   </p>
                 )}
               </TabsContent>
@@ -127,7 +127,7 @@ export default function MyBetsPage() {
                 ) : resolvedMarkets.length > 0 ? (
                   resolvedMarkets.map((market) => <EventCard key={market.id} market={market} />)
                 ) : (
-                  <p className="text-center text-muted-foreground py-8">You don't have any bets in resolved markets.</p>
+                  <p className="text-center text-muted-foreground py-8">You don&apos;t have any bets in resolved markets.</p>
                 )}
               </TabsContent>
             </Tabs>
